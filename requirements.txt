@@ -1,5 +1,6 @@
 decorator==4.0.10
 networkx==1.11
-Pillow==3.3.0
+Pillow==3.3.0 
+pandas==0.18.1
 pylabels==1.2.1
 reportlab==3.3.0

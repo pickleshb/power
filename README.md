@@ -10,36 +10,28 @@ Files
 
 Requirements
 ============
-python needs networkx and decorator
+Pythong requiremts are in requirements.txt
 ```
-pip install networkx decorator
+pip install -r requirements.txt
 ```
 
-If you want to go stright to pdf you also need Ghostscript-9.19
+On mac OS you will need graphviz
+```
+brew install graphviz
+```
 
-macOS can get it from http://pages.uoregon.edu/koch/
+If you want to go stright to pdf you also need [Ghostscript-9.19](http://pages.uoregon.edu/koch/)
 
 Generate
 ========
-Straight to pdf
+To generate your powerplan and put it in the output folder run
 ```
-./diagram.py | unflatten -l 3  | dot -Tps2 | ps2pdf - > power.pdf
-```
-
-or on Mac, preview can convert ps to pdf, with out the need to install ghostscript
-```
-./diagram.py | unflatten -l 3  | dot -Tps2 > power.ps
+bin/diagram.sh
 ```
 
 Labels
 ======
-Requirments
+To generate distro labels and put them in the output folder run
 ```
-pip install reportlab pylabels
+bin/labels.sh
 ```
-
-Run
-```
-./node-labels.py
-```
-output is in node-labels.py

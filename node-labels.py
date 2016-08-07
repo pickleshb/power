@@ -48,5 +48,5 @@ for node in nodes:
     sheet.add_label(node)
 
 # save it
-sheet.save('node-labels.pdf')
+sheet.save('output/node-labels.pdf')
 print("{0:d} label(s) output on {1:d} page(s).".format(sheet.label_count, sheet.page_count))

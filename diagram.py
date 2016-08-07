@@ -1,14 +1,15 @@
 #!/usr/bin/env python
+
 import json
 import networkx as nx
 import operator
 from collections import Counter
 import datetime
 
-f1 = open ('nodes.json')
-f2 = open ('links.json')
-f3 = open ('def_node.json')
-f4 = open ('def_link.json')
+f1 = open('data/nodes.json')
+f2 = open('data/links.json')
+f3 = open('data/def_node.json')
+f4 = open('data/def_link.json')
 
 nodes=json.load(f1)
 links=json.load(f2)
@@ -38,7 +39,7 @@ def printdotfile(grid):
 	GG = SG[grid]
 
 	print """
-digraph emfcamp_power_%s {
+	digraph emfcamp_power_%s {
 	node [shape=record]
 	rankdir=LR
 	nodesep=0.1

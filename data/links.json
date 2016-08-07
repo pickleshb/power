@@ -1,0 +1,631 @@
+[
+  {
+    "src": "Xgen",
+    "length": 5, 
+    "dst": "Xdis" 
+  },
+  {
+    "src": "Xdis",
+    "length": 25,
+    "dst": "C_Dist"
+  },
+  {
+    "src": "C_Dist",
+    "length": 25,
+    "dst": "C1"
+  },
+  {
+    "src": "C1",
+    "length": 5,
+    "dst": "C1_DK1"
+  },
+  {
+    "src": "C1",
+    "length": 5,
+    "dst": "C1_DK2"
+  },
+  {
+    "src": "C1",
+    "length": 50,
+    "dst": "C2"
+  },
+  {
+    "src": "C2",
+    "length": 5,
+    "dst": "C2_DK1"
+  },
+  {
+    "src": "C2",
+    "length": 5,
+    "dst": "C2_DK2"
+  },
+  {
+    "src": "C2",
+    "length": 60,
+    "dst": "Changeover_X_Adapter"
+  },
+  {
+    "src": "Changeover_X_Adapter",
+    "length": 0.5,
+    "dst": "Changeover_X"
+  },
+  {
+    "src": "C_Dist",
+    "length": 75,
+    "dst": "D1"
+  },
+  {
+    "src": "D1",
+    "length": 5,
+    "dst": "D1_DK1"
+  },
+  {
+    "src": "D1",
+    "length": 75,
+    "dst": "D2"
+  },
+  {
+    "src": "D2",
+    "length": 5,
+    "dst": "D2_DK1"
+  },
+  {
+    "src": "C_Dist",
+    "length": 25,
+    "dst": "H2"
+  },
+  {
+    "src": "H2",
+    "length": 5,
+    "dst": "H2_DK1"
+  },
+  {
+    "src": "H2",
+    "length": 5,
+    "dst": "H2_DK2"
+  },
+  {
+    "src": "H2",
+    "length": 50,
+    "dst": "H3"
+  },
+  {
+    "src": "H3",
+    "length": 50,
+    "dst": "Entrance"
+  },
+  {
+    "src": "H2",
+    "length": 50,
+    "dst": "H1"
+  },
+  {
+    "src": "H1",
+    "length": 5,
+    "dst": "H1_DK1"
+  },
+  {
+    "src": "H1",
+    "length": 5,
+    "dst": "H1_DK2"
+  },
+  {
+    "src": "H1",
+    "length": 50,
+    "dst": "J1_Adapter"
+  },
+  {
+    "src": "J1_Adapter",
+    "length": 2,
+    "dst": "J1"
+  },
+  {
+    "src": "J1",
+    "length": 5,
+    "dst": "J1_DK1"
+  },
+  {
+    "src": "Xdis",
+    "length": 50,
+    "dst": "B_Dist"
+  },
+  {
+    "src": "B_Dist",
+    "length": 60,
+    "dst": "A1"
+  },
+  {
+    "src": "A1",
+    "length": 5,
+    "dst": "A1_DK1"
+  },
+  {
+    "src": "A1",
+    "length": 5,
+    "dst": "A1_DK2"
+  },
+  {
+    "src": "B1",
+    "length": 35,
+    "dst": "Milliways"
+  },
+  {
+    "src": "B3",
+    "length": 50,
+    "dst": "A2"
+  },
+  {
+    "src": "A2",
+    "length": 5,
+    "dst": "A2_DK1"
+  },
+  {
+    "src": "A2",
+    "length": 5,
+    "dst": "A2_DK2"
+  },
+  {
+    "src": "B_Dist",
+    "length": 2,
+    "dst": "B1"
+  },
+  {
+    "src": "B1",
+    "length": 5,
+    "dst": "B1_DK1"
+  },
+  {
+    "src": "B1",
+    "length": 5,
+    "dst": "B1_DK2"
+  },
+  {
+    "src": "B_Dist",
+    "length": 75,
+    "dst": "B2"
+  },
+  {
+    "src": "B2",
+    "length": 5,
+    "dst": "B2_DK1"
+  },
+  {
+    "src": "B2",
+    "length": 5,
+    "dst": "B2_DK2"
+  },
+  {
+    "src": "B_Dist",
+    "length": 75,
+    "dst": "B3"
+  },
+  {
+    "src": "B3",
+    "length": 5,
+    "dst": "B3_DK1"
+  },
+  {
+    "src": "B3",
+    "length": 5,
+    "dst": "B3_DK2"
+  },
+
+  {
+    "src": "StageB_DistA",
+    "length": 35,
+    "dst": "Workshop1_Dist"
+  },
+    {
+    "src": "Workshop1_Dist",
+    "length": 10,
+    "dst": "Workshop1_A"
+  },
+  {
+    "src": "Workshop1_Dist",
+    "length": 10,
+    "dst": "Workshop1_B"
+  },
+  {
+    "src": "Xdis",
+    "length": 50,
+    "dst": "G2"
+  },
+  {
+    "src": "G2",
+    "length": 5,
+    "dst": "G2_DK1"
+  },
+  {
+    "src": "G2",
+    "length": 5,
+    "dst": "G2_DK2"
+  },
+  {
+    "src": "G2",
+    "length": 50,
+    "dst": "G1"
+  },
+  {
+    "src": "G1",
+    "length": 5,
+    "dst": "G1_DK1"
+  },
+  {
+    "src": "G1",
+    "length": 5,
+    "dst": "G1_DK2"
+  },
+  {
+    "src": "Workshop1_Dist",
+    "length": 50,
+    "dst": "G3"
+  },
+  {
+    "src": "G3",
+    "length": 5,
+    "dst": "G3_DK1"
+  },
+  {
+    "src": "G3",
+    "length": 5,
+    "dst": "G3_DK2"
+  },
+  {
+    "src": "Xdis",
+    "length": 50,
+    "dst": "StageB_DistA"
+  },
+  {
+    "src": "StageB_DistA",
+    "length": 10,
+    "dst": "StageB_Right"
+  },
+  {
+    "src": "StageB_DistA",
+    "length": 10,
+    "dst": "StageB_Left"
+  },
+  {
+    "src": "Xdis",
+    "length": 35,
+    "dst": "Kids_Dist"
+  },
+  {
+    "src": "Kids_Dist",
+    "length": 10,
+    "dst": "Kids_A"
+  },
+  {
+    "src": "Kids_Dist",
+    "length": 10,
+    "dst": "Kids_B"
+  },
+  {
+    "src": "Kids_Dist",
+    "length": 25,
+    "dst": "Kids_C"
+  },
+
+  {
+    "src": "Ygen",
+    "length": 5, 
+    "dst": "Ydis"
+  },
+  {
+    "src": "Ydis",
+    "length": 50,
+    "dst": "StageA_DistA"
+  },
+  {
+    "src": "StageA_DistA",
+    "length": 5,
+    "dst": "StageA_Left"
+  },
+  {
+    "src": "StageA_DistA",
+    "length": 25,
+    "dst": "StageA_Right"
+  },
+   {
+    "src": "Ydis",
+    "length": 50,
+    "dst": "Volunteer_Dist"
+  },
+  {
+    "src": "Volunteer_Dist",
+    "length": 10,
+    "dst": "Volunteer_A"
+  },
+  {
+    "src": "Volunteer_Dist",
+    "length": 10,
+    "dst": "Volunteer_A"
+  },
+  {
+    "src": "Volunteer_Dist",
+    "length": 10,
+    "dst": "Volunteer_A"
+  },
+  {
+    "src": "Volunteer_Dist",
+    "length": 35,
+    "dst": "StageC_DistA"
+  },
+  {
+    "src": "StageC_DistA",
+    "length": 5,
+    "dst": "StageC_Left"
+  },
+  {
+    "src": "StageC_DistA",
+    "length": 10,
+    "dst": "StageC_Right"
+  },
+  {
+    "src": "StageC_DistA",
+    "length": 35,
+    "dst": "Microsoft"
+  },
+  {
+    "src": "Ydis",
+    "length": 35,
+    "dst": "Changeover_Y_Adapter"
+  },
+  {
+    "src": "Changeover_Y_Adapter",
+    "length": 0.5,
+    "dst": "Changeover_Y"
+  },
+  {
+    "src": "Changeover_Y",
+    "length": 50,
+    "dst": "HQ_Dist"
+  },
+  {
+    "src": "HQ_Dist",
+    "length": 10,
+    "dst": "HQ"
+  },
+  {
+    "src": "HQ_Dist",
+    "length": 10,
+    "dst": "NOC"
+  },
+  {
+    "src": "Changeover_Y",
+    "length": 5,
+    "dst": "Info_Dist"
+  },
+  {
+    "src": "Info_Dist",
+    "length": 5,
+    "dst": "NOC_DC"
+  },
+  {
+    "src": "Info_Dist",
+    "length": 5,
+    "dst": "NOC_DC_A"
+  },
+  {
+    "src": "Info_Dist",
+    "length": 5,
+    "dst": "NOC_DC_B"
+  },
+  {
+    "src": "Info_Dist",
+    "length": 10,
+    "dst": "Info_A"
+  },
+  {
+    "src": "Info_Dist",
+    "length": 10,
+    "dst": "FirstAid_A"
+  },
+  {
+    "src": "Info_Dist",
+    "length": 25,
+    "dst": "GreenRoom_A"
+  },
+  {
+    "src": "Ydis",
+    "length": 75,
+    "dst": "HackCenter_Dist"
+  },
+  {
+    "src": "HackCenter_Dist",
+    "length": 10,
+    "dst": "HackCenter_A"
+  },
+  {
+    "src": "HackCenter_Dist",
+    "length": 10,
+    "dst": "HackCenter_B"
+  },
+  {
+    "src": "HackCenter_Dist",
+    "length": 25,
+    "dst": "HackCenter_C"
+  },
+  {
+    "src": "HackCenter_Dist",
+    "length": 50,
+    "dst": "Catering_Dist"
+  },
+  {
+    "src": "Catering_Dist",
+    "length": 25,
+    "dst": "K2_Adapter"
+  },
+  {
+    "src": "K2_Adapter",
+    "length": 5,
+    "dst": "K2"
+  },
+  {
+    "src": "K2",
+    "length": 5,
+    "dst": "K2_DK1"
+  },
+  {
+    "src": "K2",
+    "length": 25,
+    "dst": "WC_South"
+  },
+
+  {
+    "src": "Ydis",
+    "length": 50,
+    "dst": "Bar_Dist"
+  },
+  {
+    "src": "Bar_Dist",
+    "length": 10,
+    "dst": "Bar_A"
+  },
+  {
+    "src": "Bar_Dist",
+    "length": 25,
+    "dst": "ColdRoom_A"
+  },
+  {
+    "src": "Bar_Dist",
+    "length": 25,
+    "dst": "ColdRoom_B"
+  },
+  {
+    "src": "Bar_Dist",
+    "length": 25,
+    "dst": "ColdRoom_C"
+  },
+  {
+    "src": "Bar_Dist",
+    "length": 10,
+    "dst": "Lounge_DistA"
+  },
+
+  {
+    "src": "Lounge_DistA",
+    "length": 10,
+    "dst": "Lounge_A"
+  },
+  {
+    "src": "Lounge_DistA",
+    "length": 10,
+    "dst": "Lounge_B"
+  },
+  {
+    "src": "Lounge_DistA",
+    "length": 25,
+    "dst": "Lounge_DistB"
+  },
+  {
+    "src": "Lounge_DistB",
+    "length": 10,
+    "dst": "Lounge_C"
+  },
+  {
+    "src": "Lounge_DistB",
+    "length": 10,
+    "dst": "Lounge_D"
+  },
+
+
+  {
+    "src": "Bar_dist",
+    "length": 25,
+    "dst": "K1"
+  },
+  {
+    "src": "K1",
+    "length": 5,
+    "dst": "K1_DK1"
+  },
+    {
+    "src": "Bar_dist",
+    "length": 50,
+    "dst": "Tree"
+  },
+
+
+  {
+    "src": "Bar_Dist",
+    "length": 35,
+    "dst": "Algorave_Dist"
+  },
+  {
+    "src": "Algorave_Dist",
+    "length": 5,
+    "dst": "Algorave_A"
+  },
+  {
+    "src": "Algorave_Dist",
+    "length": 5,
+    "dst": "Algorave_Adapter"
+  },
+    {
+    "src": "Algorave_Adapter",
+    "length": 15,
+    "dst": "Badge_Dist"
+  },
+  {
+    "src": "Badge_Dist",
+    "length": 5,
+    "dst": "Badge_A"
+  },
+  {
+    "src": "Badge_Dist",
+    "length": 5,
+    "dst": "Badge_A"
+  },
+  {
+    "src": "Badge_Dist",
+    "length": 25,
+    "dst": "Arcade_Dist"
+  },
+  {
+    "src": "Arcade_Dist",
+    "length": 25,
+    "dst": "Arcade_A"
+  },
+  {
+    "src": "Arcade_Dist",
+    "length": 25,
+    "dst": "Arcade_B"
+  },
+  {
+    "src": "Arcade_Dist",
+    "length": 25,
+    "dst": "Arcade_C"
+  },
+  {
+    "src": "Arcade_Dist",
+    "length": 10,
+    "dst": "Arcade_D"
+  },
+  {
+    "src": "Arcade_Dist",
+    "length": 10,
+    "dst": "Arcade_E"
+  },
+  {
+    "src": "Arcade_Dist",
+    "length": 25,
+    "dst": "Workshop2_A"
+  },
+  {
+    "src": "Arcade_Dist",
+    "length": 25,
+    "dst": "Workshop2_B"
+  },
+  {
+    "src": "Algorave_Adapter",
+    "length": 50,
+    "dst": "Spillout"
+  },
+    {
+    "src": "Spillout",
+    "length": 50,
+    "dst": "Showers"
+  }
+ 
+]

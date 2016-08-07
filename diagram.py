@@ -1,14 +1,15 @@
-#!/opt/local/bin/python
+#!/usr/bin/env python
+
 import json
 import networkx as nx
 import operator
 from collections import Counter
 import datetime
 
-f1 = open ('nodes.json')
-f2 = open ('links.json')
-f3 = open ('def_node.json')
-f4 = open ('def_link.json')
+f1 = open('data/nodes.json')
+f2 = open('data/links.json')
+f3 = open('data/def_node.json')
+f4 = open('data/def_link.json')
 
 nodes=json.load(f1)
 links=json.load(f2)
@@ -38,7 +39,7 @@ def printdotfile(grid):
 	GG = SG[grid]
 
 	print """
-digraph emfcamp_power_%s {
+	digraph emfcamp_power_%s {
 	node [shape=record]
 	rankdir=LR
 	nodesep=0.1
@@ -48,7 +49,7 @@ digraph emfcamp_power_%s {
 	edge [ fontname=ArialNarrow, fontcolor=red, fontsize=10 ];
 	"""%(grid)
 	print """	#display title block
-	title [shape=record, style="rounded,filled" margin=0.5 fillcolor="lightgray" label="EMF2014 Power|Grid: %s|%s"];
+	title [shape=record, style="rounded,filled" margin=0.5 fillcolor="lightgray" label="EMF2016 Power|Grid: %s|%s"];
 	"""%(grid, datetime.datetime.now().strftime("%Y-%m-%d %H:%M"))
 
 	for curn in nx.nodes(GG):
@@ -65,13 +66,16 @@ digraph emfcamp_power_%s {
 			print """		<td%s PORT="in"><font color="%s">%s</font></td>"""%(rowspan, def_link[inp]['color'], def_link[inp]['name'])
 		except KeyError:
 			pass
-		print """		<td%s><font color="orange">%s</font><br/>%s</td>"""%(rowspan, curn, nodes[curn])
+		print """		<td%s><font color="purple">%s</font><br/>%s</td>"""%(rowspan, curn, nodes[curn])
 		for i, opt in enumerate(opts):
 			if i>0 : print "		</tr><tr>" 
 			if opt['count'] > 1: 
 				label = "%ix%s"%(opt['count'],def_link[opt['port']]['name'])
 			else:
 				label = def_link[opt['port']]['name']
+			if 'breaker' in opt:
+				label += "<br/>%s"%(opt['breaker'])
+
 			print """		<td port="%s"><font color="%s">%s</font></td>"""%(opt['port'],def_link[opt['port']]['color'],label)
 		print "			</tr></table>> ]"
 	ll_length = nx.get_edge_attributes(GG,'length')

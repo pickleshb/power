@@ -1,32 +1,90 @@
 
 Grid	NodeCt	CableCt	CableLeng[m]	CableMass[kg]
-Vgen 	10 	9 	300 	322.05
-Tgen 	23 	22 	600 	586.45
-Kgen 	27 	26 	742 	684.17
-Total	27 	26 	1642 	1592.67
+Ygen 	58 	57 	1175.5 	1092.935
+Xgen 	62 	61 	1379.5 	1862.995
+Total	128 	121 	2635.0 	3001.16
 
 10 distros furthest from generator
 node	grid	distance(m)
-A1_DK 	Tgen 	210
-B1_DK 	Kgen 	210
-B1 	Kgen 	205
-A1 	Tgen 	205
-E1_DK 	Kgen 	185
-E1 	Kgen 	180
-B2_DK 	Tgen 	170
-B2 	Tgen 	165
-B2s 	Tgen 	155
-C3_DK 	Kgen 	137
+Showers 	Ygen 	195
+WC_South 	Ygen 	185
+A2_DK2 	Xgen 	185
+A2_DK1 	Xgen 	185
+D2_DK1 	Xgen 	185
+A2 	Xgen 	180
+D2 	Xgen 	180
+Changeover_X 	Xgen 	165.5
+K2_DK1 	Ygen 	165
+Changeover_X_Adapter 	Xgen 	165
 
 10 distros with worst voltage drop (50% of max current on all links)
 node	grid	vDrop(Volt)
-E1_DK 	Kgen 	17.7408
-E1 	Kgen 	17.248
-B1_DK 	Kgen 	16.59355
-A1_DK 	Tgen 	16.11455
-B1 	Kgen 	16.10075
-A1 	Tgen 	15.62175
-E2_DK 	Kgen 	12.8128
-E2 	Kgen 	12.32
-B2_DK 	Tgen 	12.17215
-B2 	Tgen 	11.67935
+Showers 	Ygen 	16.029
+WC_South 	Ygen 	13.8243
+Entrance 	Xgen 	13.30475
+D2_DK1 	Xgen 	13.0978
+A2_DK2 	Xgen 	12.82405
+A2_DK1 	Xgen 	12.82405
+D2 	Xgen 	12.505
+A2 	Xgen 	12.33125
+K2_DK1 	Ygen 	11.9531
+Arcade_A 	Ygen 	11.535
+
+Count of distros by type
+Qty	Type
+2 	SBR
+2 	SPEC-4
+7 	SOB
+9 	EPS32-2
+2 	ADAP63/125
+1 	EPS32
+2 	125AMF-EVENT
+1 	GBR-3
+2 	EPS63-4
+56 	TOB32
+4 	SSB/32
+6 	TOB16
+1 	TH
+4 	ColdRoom
+24 	EPS63-3
+2 	gen
+2 	PortaCabin
+
+Count of cable lengths by grid
+Grid	Type	Length	Count
+Ygen	powerlock	5	1
+Xgen	63/3	60	2
+Xgen	125/3	25	1
+Xgen	63/3	25	2
+Ygen	125/3	50	1
+Ygen	32A	5	6
+Xgen	63/3	75	4
+Xgen	32A	50	2
+Ygen	32/3	50	3
+Xgen	32A	10	6
+Xgen	16A	5	3
+Xgen	32/3	2	1
+Xgen	32A	25	1
+Ygen	63/3	5	2
+Ygen	32/3	25	2
+Xgen	32A	5	24
+Xgen	63/3	2	1
+Xgen	powerlock	5	1
+Ygen	16A	25	3
+Ygen	16A	10	1
+Xgen	125/3	0.5	1
+Xgen	125/3	50	1
+Ygen	16A	5	2
+Ygen	63/3	50	3
+Ygen	32/3	10	1
+Ygen	63/3	35	3
+Ygen	32/3	5	1
+Xgen	63/3	35	3
+Ygen	32A	25	8
+Ygen	63/3	15	1
+Xgen	63/3	50	8
+Ygen	32A	10	14
+Ygen	125/3	0.5	1
+Ygen	63/3	75	1
+Ygen	32A	35	1
+Ygen	63/3	25	2

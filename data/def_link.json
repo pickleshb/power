@@ -1,4 +1,11 @@
 {
+  "powerlock": {
+    "color": "black", 
+    "name": "PL", 
+    "density": 6.00,
+    "mvperM": 0,
+    "penwidth": 4
+  },
   "125/3": {
     "color": "red", 
     "name": "125/3o", 
@@ -6,12 +13,12 @@
     "mvperM": 65.5,
     "penwidth": 4
   }, 
-  "16A": {
-    "color": "blue", 
-    "name": "16A", 
-    "density": 0.196,
-    "mvperM": 118.56,
-    "penwidth": 1
+  "63/3": {
+    "color": "red", 
+    "name": "63/3o", 
+    "density": 1.53,
+    "mvperM": 72.45,
+    "penwidth": 3
   }, 
   "32/3": {
     "color": "red", 
@@ -27,23 +34,30 @@
     "mvperM": 98.56,
     "penwidth": 2
   }, 
-  "63/3": {
-    "color": "red", 
-    "name": "63/3o", 
-    "density": 1.53,
-    "mvperM": 72.45,
-    "penwidth": 3
-  }, 
-  "powerlock": {
-    "color": "black", 
-    "name": "PL", 
-    "density": 6.00,
-    "mvperM": 0,
-    "penwidth": 4
+  "powercon": {
+    "color": "blue", 
+    "name": "PowerCON", 
+    "density": 0.37,
+    "mvperM": 98.56,
+    "penwidth": 1.5
   },
+  "16A": {
+    "color": "blue", 
+    "name": "16A", 
+    "density": 0.196,
+    "mvperM": 118.56,
+    "penwidth": 1
+  }, 
   "13A": {
     "color": "blue", 
     "name": "13A", 
+    "density": 0.196,
+    "mvperM": 118.56,
+    "penwidth": 1
+  },
+  "soccapex": {
+    "color": "black", 
+    "name": "Soccapex", 
     "density": 0.196,
     "mvperM": 118.56,
     "penwidth": 1

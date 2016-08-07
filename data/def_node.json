@@ -1,383 +1,180 @@
 {
-  "EPS32": {
-    "in": "32/3", 
+  "baby": {
+    "in": "63/3",
     "out": [
       {
-        "count": 9, 
+        "count": 6,
         "port": "16A",
         "breaker": "RCBO"
-      }, 
-      {
-        "count": 1, 
-        "port": "32/3",
-        "breaker": "Pass"
-      }
-    ]
-  }, 
-  "EPS32-2": {
-    "in": "32/3", 
-    "out": [
-      {
-        "count": 6, 
-        "port": "16A",
-        "breaker": "RCBO"
-      }, 
-      {
-        "count": 3, 
-        "port": "32A",
-        "breaker": "RCBO"
-      }, 
-      {
-        "count": 1, 
-        "port": "32/3",
-        "breaker": "Pass"
-      }
-    ]
-  }, 
-  "EPS63-3": {
-    "in": "63/3", 
-    "out": [
-      {
-        "count": 6, 
-        "port": "16A",
-        "breaker": "RCBO"
-      }, 
-      {
-        "count": 6, 
-        "port": "32A",
-        "breaker": "RCBO"
-      }, 
-      {
-        "count": 1, 
-        "port": "63/3",
-        "breaker": "Pass"
-      }
-    ]
-  }, 
-  "EPS63-4": {
-    "in": "63/3", 
-    "out": [
-      {
-        "count": 18, 
-        "port": "16A",
-        "breaker": "RCBO"
-      }, 
-      {
-        "count": 1, 
-        "port": "63/3",
-        "breaker": "Pass"
-      }
-    ]
-  },
-  "EPS63-5": {
-    "in": "63/3", 
-    "out": [
-      {
-        "count": 9, 
-        "port": "32A",
-        "breaker": "RCBO"
-      }, 
-      {
-        "count": 1, 
-        "port": "63/3",
-        "breaker": "Pass"
-      }
-    ]
-  },
-  "SBR": {
-    "in": "125/3", 
-    "out": [
-      {
-        "count": 4, 
-        "port": "63/3",
-        "breaker": "MCB+RCD Adj"
-      }
-    ]
-  },
-  "HTSB": {
-    "in": "125/3", 
-    "out": [
-      {
-        "count": 3, 
-        "port": "32A",
-        "breaker": "RCBO"
-      }, 
-      {
-        "count": 3, 
-        "port": "32/3",
-        "breaker": "RCBO"
-      }, 
-      {
-        "count": 1, 
-        "port": "63/3",
-        "breaker": "MCB+RCD Adj"
-      }
-    ]
-  },
-  "GBR-1": {
-    "in": "125/3", 
-    "out": [
-      {
-        "count": 12, 
-        "port": "16A",
-        "breaker": "RCBO"
-      }, 
-      {
-        "count": 6, 
-        "port": "32A",
-        "breaker": "RCBO"
-      }, 
-      {
-        "count": 2, 
-        "port": "32/3",
-        "breaker": "RCBO"
-      }, 
-      {
-        "count": 1, 
-        "port": "63/3",
-        "breaker": "MCB+RCD Adj"
-      }
-    ]
-  }, 
-  "GBR-2": {
-    "in": "125/3", 
-    "out": [
-      {
-        "count": 6, 
-        "port": "16A",
-        "breaker": "RCBO"
-      }, 
-      {
-        "count": 12, 
-        "port": "32A",
-        "breaker": "RCBO"
-      }, 
-      {
-        "count": 2, 
-        "port": "32/3",
-        "breaker": "RCBO"
-      }, 
-      {
-        "count": 1, 
-        "port": "63/3",
-        "breaker": "MCB+RCD Adj"
-      }
-    ]
-  }, 
-  "GBR-3": {
-    "in": "125/3", 
-    "out": [
-      {
-        "count": 6, 
-        "port": "16A",
-        "breaker": "RCBO"
-      }, 
-      {
-        "count": 6, 
-        "port": "32A",
-        "breaker": "RCBO"
-      }, 
-      {
-        "count": 2, 
-        "port": "32/3",
-        "breaker": "RCBO"
-      }, 
-      {
-        "count": 2, 
-        "port": "63/3",
-        "breaker": "MCB+RCD Adj"
-      }
-    ]
-  }, 
-  "Reefer": {
-    "in": "32/3"
-  },
-  "PortaCabin": {
-    "in": "32A"
-  },
-  "ColdRoom": {
-    "in": "16A"
-  },
-  "HT": {
-    "in": "powerlock", 
-    "out": [
-      {
-        "count": 6, 
-        "port": "63/3",
-        "breaker": "MCB+RCD Adj"
-      }
-    ]
-  },
-  "SPEC-4": {
-    "in": "powerlock", 
-    "out": [
-      {
-        "count": 4, 
-        "port": "63/3",
-        "breaker": "MCCB"
-      }, 
-      {
-        "count": 2, 
-        "port": "125/3",
-        "breaker": "MCCB"
-      }
-    ]
-  },
-  "SPEC-5": {
-    "in": "powerlock", 
-    "out": [
-      {
-        "count": 2, 
-        "port": "32A",
-        "breaker": "MCCB"
-      }, 
-      {
-        "count": 1, 
-        "port": "63/3",
-        "breaker": "MCCB"
-      }, 
-      {
-        "count": 3, 
-        "port": "125/3",
-        "breaker": "MCB+RCD Adj"
-      }
-    ]
-  },
-  "SPEC-6": {
-    "in": "powerlock", 
-    "out": [
-      {
-        "count": 4, 
-        "port": "32/3",
-        "breaker": "RCBO"
-      }, 
-      {
-        "count": 2, 
-        "port": "63/3",
-        "breaker": "MCB+RCD Adj"
-      }, 
-      {
-        "count": 1, 
-        "port": "125/3",
-        "breaker": "MCB+RCD Adj"
-      }
-    ]
-  },
-  "125AMF-EVENT": {
-    "in": "125/3", 
-    "out": [
-      {
-        "count": 1, 
-        "port": "16A"
       },
       {
-        "count": 1, 
-        "port": "32/3"
-      }, 
-      {
-        "count": 1, 
-        "port": "63/3"
-      }, 
-      {
-        "count": 1, 
-        "port": "125/3"
-      }
-    ]
-  },
-  "SSB-1": {
-    "in": "32A", 
-    "out": [
-      {
-        "count": 4, 
-        "port": "16A",
-        "breaker": "MCB"
-      }
-    ]
-  }, 
-  "SSB/32": {
-    "in": "63/3", 
-    "out": [
-      {
-        "count": 2, 
-        "port": "32/3",
-        "breaker": "RCBO"
-      }
-    ]
-  }, 
-  "TH": {
-    "in": "63/3", 
-    "out": [
-      {
-        "count": 1, 
+        "count": 2,
         "port": "32/3",
         "breaker": "RCBO"
       },
       {
-        "count": 1, 
+        "count": 1,
         "port": "63/3",
         "breaker": "Pass"
       }
     ]
-  },
-  "TOB16": {
-    "in": "16A",
+  }, 
+  "christro": {
+    "in": "32/3", 
     "out": [
       {
-        "count": 14,
-        "port": "13A",
+        "count": 6,
+        "port": "16A",
+        "breaker": "RCBO"
+      },
+      {
+        "count": 6,
+        "port": "powercon",
         "breaker": "RCBO"
       }
     ]
+  },
+  "sound": {
+    "in": "63/3",
+    "out": [
+      {
+        "count": 6,
+        "port": "32A",
+        "breaker": "RCBO"
+      },
+      {
+        "count": 6,
+        "port": "16A",
+        "breaker": "RCBO"
+      },
+      {
+        "count": 6,
+        "port": "powercon",
+        "breaker": "RCBO"
+      },
+      {
+        "count": 1,
+        "port": "32/3",
+        "breaker": "RCBO"
+      },
+      {
+        "count": 1,
+        "port": "63/3",
+        "breaker": "Pass"
+      }
+    ]
   }, 
-  "TOB32": {
+  "substation": {
+    "in": "powerlock",
+    "out": [
+      {
+        "count": 9,
+        "port": "32A",
+        "breaker": "RCBO"
+      },
+      {
+        "count": 6,
+        "port": "16A",
+        "breaker": "RCBO"
+      },
+      {
+        "count": 9,
+        "port": "powercon",
+        "breaker": "RCBO"
+      },
+      {
+        "count": 6,
+        "port": "32/3",
+        "breaker": "RCBO"
+      },
+      {
+        "count": 3,
+        "port": "63/3",
+        "breaker": "RCBO"
+      }
+    ]
+  },
+  "toblerone": {
+    "in": "32/3",
+    "out": [
+      {
+        "count": 6,
+        "port": "16A",
+        "breaker": "RCBO"
+      }
+    ]
+  },
+  "bigintel": {
+    "in": "63/3",
+    "out": [
+      {
+        "count": 6,
+        "port": "16A",
+        "breaker": "RCBO"
+      },
+      {
+        "count": 5,
+        "port": "soccapex",
+        "breaker": "RCBO"
+      }
+    ]
+  },
+  "babyintel": {
+    "in": "32/3",
+    "out": [
+      {
+        "count": 1,
+        "port": "soccapex",
+        "breaker": "RCBO"
+      }
+    ]
+  },
+  "SinglePH_1": {
     "in": "32A",
     "out": [
       {
-        "count": 14,
-        "port": "13A",
+        "count": 2,
+        "port": "16A",
+        "breaker": "RCBO"
+      }, 
+      {
+        "count": 2,
+        "port": "32A",
         "breaker": "RCBO"
       }
     ]
   }, 
-  "APAP16/4/13/.5": {
-    "in": "16A",
+  "SinglePH_2": {
+    "in": "32A",
     "out": [
       {
         "count": 4,
-        "port": "13A"
+        "port": "16A",
+        "breaker": "RCBO"
       }
     ]
-  },
-  "ADAP63/125": {
+  }, 
+  "63/3_Variable": {
     "in": "63/3",
     "out": [
       {
         "count": 1,
-        "port": "125/3"
+        "port": "63/3",
+        "breaker": "MCB + RCD Adj"
       }
     ]
   }, 
-  "SOB": {
-    "in": "32A",
+  "32/3_split": {
+    "in": "32/3",
     "out": [
       {
-        "count": 4,
-        "port": "13A",
-        "breaker": "MCB"
-      },
-      {
-        "count": 4, 
-        "port": "16A",
-        "breaker": "MCB"
-      }, 
-      {
-        "count": 1, 
-        "port": "32A",
-        "breaker": "Pass"
+        "count": 2,
+        "port": "32/3",
+        "breaker": "RCBO"
       }
     ]
   },
-  "gen": {
+   "incomerPL": {
     "out": [
       {
         "count": 1, 

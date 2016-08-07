@@ -2,6 +2,3 @@
 from files import *
 
 print nodes, links, def_node, def_link
-
-print def_link
-

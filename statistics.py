@@ -1,24 +1,11 @@
 #!/usr/bin/env python
-import json
+
 import networkx as nx
-import matplotlib.pyplot as plt
+# import matplotlib.pyplot as plt
 import operator
 from collections import Counter
 
-f1 = open ('nodes.json')
-f2 = open ('links.json')
-f3 = open ('def_node.json')
-f4 = open ('def_link.json')
-
-nodes=json.load(f1)
-links=json.load(f2)
-def_node=json.load(f3)
-def_link=json.load(f4)
-
-f1.close()
-f2.close()
-f3.close()
-f4.close()
+from files import *
 
 G = nx.Graph()
 G.add_nodes_from(nodes)
@@ -109,6 +96,4 @@ for gen in gens:
 			LL[key]=1
 
 for a in LL.keys():
-	# i am a knob
 	print "%s\t%s\t%s\t%i"%(a[0],a[1],a[2],LL[a])
-

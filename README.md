@@ -1,5 +1,3 @@
-Power stuff
-
 Files
 =====
 
@@ -24,14 +22,12 @@ You will also need [Ghostscript-9.19](http://pages.uoregon.edu/koch/)
 
 Generate
 ========
-To generate your powerplan and put it in the output folder run
+To generate your plans and put them in the output folder run
 ```
-bin/diagram.sh
+bin/genPaperwork.sh
 ```
 
-Labels
-======
-To generate distro labels and put them in the output folder run
+To view see what flags are available to suppress certain file generation
 ```
-bin/labels.sh
+bin/genPaperwork.sh -h
 ```

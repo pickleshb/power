@@ -23,9 +23,8 @@ show_help() {
 
 spinner() {
   local pid=$1
-  local delay=0.75
+  local delay=0.3
   while [ "$(ps a | awk '{print $1}' | grep $pid)" ]; do
-    local temp=${spinstr#?}
     sleep $delay
     printf "${SPINNERC}%c${NC}" "."
     sleep $delay
@@ -56,17 +55,17 @@ while :; do
 done
 
 if $DIAGRAM ; then
-  bin/diagram.sh &
+  ./diagram.py | unflatten -l 3  | dot -Tps2 | ps2pdf - > output/power.pdf &
   printf "${PURPLE}Generating power diagram${NC} "
   spinner $!
 fi
 if $LABELS ; then
-  bin/labels.sh & 
+  ./node-labels.py & 
   printf "\n${PURPLE}Generating labels for you${NC} " 
   spinner $!
 fi
 if $STATS ; then
-  bin/stats.sh &
+  ./statistics.py &
   printf "\n${PURPLE}Generating network stats${NC} "
   spinner $!
 fi

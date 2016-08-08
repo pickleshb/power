@@ -5,12 +5,14 @@ import networkx as nx
 import operator
 from collections import Counter
 import datetime
-import slugify
+from slugify import slugify, Slugify
 
 from files import *
 
 # if False, just link to any part of the nodes
 linkspec=True
+custom_slugify = Slugify(to_lower=True)
+custom_slugify.separator = '_'
 
 G = nx.DiGraph()
 G.add_nodes_from(nodes)
@@ -33,7 +35,7 @@ def printdotfile(grid, event=event_data):
 	graph [ resolution=300, fontname=ArialNarrow, fontcolor=blue, fontsize=8 ];
 	node [ fontname=ArialNarrow, fontcolor=black, fontsize=10, margin=0.2];
 	edge [ fontname=ArialNarrow, fontcolor=red, fontsize=10 ];
-	"""%(slugify(event['eventName']), grid)
+	"""%(custom_slugify(event['eventName']), grid)
 	print """	#display title block
 	title [shape=record, style="rounded,filled" margin=0.5 fillcolor="lightgrey" label="%s Power|Designer: %s|Event date: %s|Rig Number: %s|Plan generated: %s"];
 	"""%(event['eventName'], event['designer'], event['eventDate'], event['rigNumber'], datetime.datetime.now().strftime("%Y-%m-%d %H:%M"))

@@ -15,9 +15,9 @@ Python requiremts are in requirements.txt
 pip install -r requirements.txt
 ```
 
-On mac OS you will need graphviz
+On mac OS you will need some other dependencies
 ```
-brew install graphviz
+brew install graphviz cairo pango
 ```
 
 You will also need [Ghostscript-9.19](http://pages.uoregon.edu/koch/)

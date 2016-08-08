@@ -174,6 +174,31 @@
       }
     ]
   },
+  "Art2000": {
+    "in": "powerlock",
+    "out": [
+      {
+        "count": 20,
+        "port": "soccapex",
+        "breaker": "RCBO"
+      },
+      {
+        "count": 3,
+        "port": "16A",
+        "breaker": "RCBO"
+      },
+      {
+        "count": 1,
+        "port": "32/3",
+        "breaker": "RCBO"
+      },
+      {
+        "count": 1,
+        "port": "powerlock",
+        "breaker": "Pass"
+      }
+    ]
+  },
    "incomerPL": {
     "out": [
       {

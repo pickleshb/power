@@ -155,7 +155,7 @@ lenghthTable.columns = ['Source', 'Type', 'Length(m)', 'Count']
 env = Environment(loader=FileSystemLoader('.'))
 template = env.get_template('templates/statistics.html')
 
-template_vars = {"title" : event['eventName'] + ' Power',
+template_vars = {"title" : event_data['eventName'] + ' Power',
                  'overview': overviewTable.to_html(index=False),
                  'distance': distanceTable.to_html(index=False),
                  'vdrop': vDropTable.to_html(index=False),

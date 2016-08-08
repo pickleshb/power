@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>{{ title }}</title>
+</head>
+<body>
+  <h1 class="centered border-bottom">{{title}}</h1>
+  <h3 class="bold">Overview</h3>
+  {{ overview }}
+  <h3 class="bold">Distros furthest from source</h3>
+  {{ distance }}
+  <h3 class="bold">Distros with worst voltage drop (50% of max current on all links)</h3>
+  {{ vdrop }}
+  <h3 class="bold">Count of distros by type</h3>
+  {{ distros }}
+  <!-- <p style="page-break-before: always" ></p> -->
+  <h3 class="bold">Count of cable lengths</h3>
+  {{ lengths }}
+</body>
+</html>

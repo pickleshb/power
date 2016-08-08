@@ -1,0 +1,74 @@
+/* --------------------------------------------------------------
+    CSS classes for use with generated stats table
+
+-------------------------------------------------------------- */
+
+/* Default font settings.
+   The font-size percentage is of 16px. (0.75 * 16px = 12px) */
+html { font-size:100.01%; }
+body {
+  font-size: 75%;
+  color: #222;
+  background: #fff;
+  font-family: Calibri;
+}
+
+
+/* Headings
+-------------------------------------------------------------- */
+
+h1,h2,h3,h4,h5,h6 { font-weight: normal; color: #111; }
+
+h1 { font-size: 3em; line-height: 1; margin-bottom: 0.5em; }
+h2 { font-size: 2em; margin-bottom: 0.75em; }
+h3 { font-size: 1.5em; line-height: 1; margin-bottom: 1em; }
+h4 { font-size: 1.2em; line-height: 1.25; margin-bottom: 1.25em; }
+h5 { font-size: 1em; font-weight: bold; margin-bottom: 1.5em; }
+h6 { font-size: 1em; font-weight: bold; }
+
+/* Text elements
+-------------------------------------------------------------- */
+
+p { margin: 0 0 1.5em; }
+
+.centered   { text-align: center; }
+.border-bottom { border-bottom: 1px solid #d0d0d0; }
+.bold { font-weight: bold; }
+
+/* Tables
+-------------------------------------------------------------- */
+
+table {
+  width: 100%;
+  display: table;
+  border-collapse: collapse;
+}
+
+ thead > tr, tbody > tr {
+  border-bottom: 1px solid #d0d0d0;
+}
+
+tbody > tr:nth-child(odd) {
+  background-color: #f2f2f2;
+}
+
+tbody > tr > td {
+  border-radius: 0px;
+}
+
+thead tr th, tbody tr td {
+  text-align: center;
+}
+
+thead {
+  border-bottom: 1px solid #d0d0d0;
+  background-color: #bbdefb;
+}
+
+td, th {
+  padding: 8px 5px;
+  display: table-cell;
+  text-align: left;
+  vertical-align: middle;
+  border-radius: 2px;
+}

@@ -4,3 +4,6 @@ Pillow==3.3.0
 pandas==0.18.1
 pylabels==1.2.1
 reportlab==3.3.0
+jinja2==2.8
+weasyprint==0.30
+slugify==0.0.1

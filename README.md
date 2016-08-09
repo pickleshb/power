@@ -1,12 +1,13 @@
 Usage
 =====
 
-All the data for the network is contained in these 4 files:
+All the data for the network is contained in these 5 files:
 
 * nodes.json - nodes in the network
 * links.json - links (cables)
 * def_node.json - definitions of distros, sources, etc
 * def_link.json - definitions of links
+* event_data.json - data that will appear in the title block
 
 For more information on how to create the network see the [wiki](../../wiki).
 

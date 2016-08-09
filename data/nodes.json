@@ -1,13 +1,12 @@
- [
+[
   {
-    "name": "IncomerSL",
-    "type": "incomerPL",
+    "name": "Incomer",
+    "type": "incomer",
     "location": "StageL"
   },
   {
-    "name": "Substation",
-    "type" :"substation",
-    "location": "StageL"
+    "name": "MyDistro",
+    "type": "exampleDist",
+    "location": "StageR"
   }
 ]
- 

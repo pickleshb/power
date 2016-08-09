@@ -1,4 +1,14 @@
 {
+  "exampleDist": {
+    "in": "63/3",
+    "out": [
+      {
+        "count": 1, 
+        "port": "63/3",
+        "breaker": "RCBO"
+      }
+    ]
+  },
   "baby": {
     "in": "63/3",
     "out": [
@@ -199,11 +209,11 @@
       }
     ]
   },
-   "incomerPL": {
+   "incomer": {
     "out": [
       {
         "count": 1, 
-        "port": "powerlock"
+        "port": "63/3"
       }
     ]
   }

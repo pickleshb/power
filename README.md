@@ -8,7 +8,7 @@ All the data for the network is contained in these 4 files:
 * def_node.json - definitions of distros, sources, etc
 * def_link.json - definitions of links
 
-For more information on how to create the network see the [wiki](wiki).
+For more information on how to create the network see the [wiki](../../wiki).
 
 Requirements
 ============

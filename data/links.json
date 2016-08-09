@@ -3,15 +3,5 @@
     "src": "IncomerSL",
     "length": 5, 
     "dst": "Substation" 
-  },
-  {
-    "src": "Substation",
-    "length": 10, 
-    "dst": "Christro" 
-  },
-  {
-    "src": "Substation",
-    "length": 180, 
-    "dst": "BigIntel" 
   }
 ]

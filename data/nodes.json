@@ -8,15 +8,6 @@
     "name": "Substation",
     "type" :"substation",
     "location": "StageL"
-  },
-  {
-    "name": "Christro",
-    "type": "christro",
-    "location": "FOH"
-  },
-  {
-    "name": "BigIntel",
-    "type": "bigintel",
-    "location": "StageR"
   }
 ]
+ 

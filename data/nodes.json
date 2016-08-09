@@ -1,6 +1,22 @@
-{
-    "Incomer": "incomerPL",
-    "Substation": "substation",
-    "Christro": "christro",
-    "BigIntel": "bigintel"
-}
+ [
+  {
+    "name": "IncomerSL",
+    "type": "incomerPL",
+    "location": "StageL"
+  },
+  {
+    "name": "Substation",
+    "type" :"substation",
+    "location": "StageL"
+  },
+  {
+    "name": "Christro",
+    "type": "christro",
+    "location": "FOH"
+  },
+  {
+    "name": "BigIntel",
+    "type": "bigintel",
+    "location": "StageR"
+  }
+]

@@ -10,17 +10,21 @@ from collections import Counter
 
 from files import *
 
+nodelist = dict()
+for node in nodes:
+	nodelist[node['name']] = node['type']
+
 G = nx.Graph()
-G.add_nodes_from(nodes)
+G.add_nodes_from(nodelist)
 
 for l in links:
-	l_type = def_node[nodes[l['dst']]]['in']
+	l_type = def_node[nodelist[l['dst']]]['in']
 	vDrop = def_link[l_type]['mvperM'] * l['length']
 	mass = def_link[l_type]['density'] * l['length']
 	G.add_edge(l['src'],l['dst'], length=l['length'], vDrop=vDrop, mass=mass, ltype=l_type)
 
 SG={}
-gens = {k for (k,v) in nodes.items() if ('incomer' in v) or ('gen' in v)}
+gens = {k for (k,v) in nodelist.items() if ('incomer' in v) or ('gen' in v)}
 for gen in gens:
 	SG[gen] = G.subgraph( nx.node_connected_component(G,gen) )
 
@@ -109,16 +113,16 @@ vDropTable.columns = ['Node', 'Source', 'VoltageDrop(V)', 'PercentageDrop']
 quants = []
 types = []
 
-for (a,b) in Counter(nodes.values()).items() :
+for (a,b) in Counter(nodelist.values()).items() :
 	quants.append(b)
 	types.append(a)
 
 distrosTable = pd.DataFrame({
-		'a': quants,
-		'b': types,
+		'a': types,
+		'b': quants,
 	})
 
-distrosTable.columns = ['Qty', 'Type']
+distrosTable.columns = ['Type', 'Qty']
 
 grid = []
 types = []

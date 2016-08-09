@@ -56,7 +56,7 @@ done
 
 if $DIAGRAM ; then
   ./diagram.py | unflatten -l 3  | dot -Tps2 | ps2pdf - > output/power.pdf &
-  printf "${PURPLE}Generating power diagram${NC} "
+  printf "\n${PURPLE}Generating power diagram${NC} "
   spinner $!
 fi
 if $LABELS ; then

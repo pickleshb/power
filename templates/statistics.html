@@ -10,8 +10,10 @@
   {{ overview }}
   <h3 class="bold">Distros furthest from source</h3>
   {{ distance }}
+  {% if context.vdrop %}
   <h3 class="bold">Distros with worst voltage drop (50% of max current on all links)</h3>
   {{ vdrop }}
+  {% endif %}
   <h3 class="bold">Count of distros by type</h3>
   {{ distros }}
   <!-- <p style="page-break-before: always" ></p> -->

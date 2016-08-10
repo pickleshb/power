@@ -10,6 +10,8 @@ from collections import Counter
 
 from files import *
 
+context = dict()
+
 nodelist = dict()
 for node in nodes:
 	nodelist[node['name']] = node['type']
@@ -101,6 +103,11 @@ for x in range( len(sorted_vDrop[:5]) ):
 		vdrop.append(sorted_vDrop[x][1]/1000)
 		percentdrop.append((sorted_vDrop[x][1]/10)/230)
 
+if nodeArray:
+	context['vdrop'] = True
+else:
+	context['vdrop'] = False
+
 vDropTable = pd.DataFrame({
 		'a': nodeArray,
 		'b': grid,
@@ -164,7 +171,8 @@ template_vars = {"title" : event_data['eventName'] + ' Power',
                  'distance': distanceTable.to_html(index=False),
                  'vdrop': vDropTable.to_html(index=False),
                  'distros': distrosTable.to_html(index=False),
-                 'lengths': lenghthTable.to_html(index=False)
+                 'lengths': lenghthTable.to_html(index=False),
+                 'context': context,
                  }
 
 html_out = template.render(template_vars)

@@ -37,7 +37,7 @@ def printdotfile(grid, event=event_data):
 	nodesep=0.1
 	fontname="ArialNarrow"
 	graph [ resolution=300, fontname=ArialNarrow, fontcolor=blue, fontsize=8 ];
-	node [ fontname=ArialNarrow, fontcolor=black, fontsize=10, margin=0.2];
+	node [ fontname=ArialNarrow, fontcolor=black, fontsize=10, margin=0.1 ];
 	edge [ fontname=ArialNarrow, fontcolor=red, fontsize=10 ];
 	"""%(custom_slugify(event['eventName']), grid)
 	print """	#display title block

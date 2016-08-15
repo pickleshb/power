@@ -18,9 +18,19 @@ Python requiremts are in requirements.txt
 pip install -r requirements.txt
 ```
 
-On mac OS you will need some other dependencies
+You may also need some other dependencies these being:
+- graphviz - handles rendering the actual nework graph
+- cairo - handles dot to pdf conversion
+- pango - handles text to dot conversion
+
+On Mac OS 
 ```
-brew install graphviz cairo pango
+brew install graphvix cairo pango
+```
+
+And on Linux 
+```
+sudo apt-get graphviz cairo pango
 ```
 
 You will also need [Ghostscript-9.19](http://pages.uoregon.edu/koch/)

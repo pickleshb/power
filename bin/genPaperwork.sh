@@ -42,6 +42,10 @@ DIAGRAM=true
 LABELS=true
 STATS=true
 
+if [ ! -d "output" ] ; then
+  mkdir output
+fi
+
 while :; do
   case "$1" in
     -h | --help ) show_help; exit;;
